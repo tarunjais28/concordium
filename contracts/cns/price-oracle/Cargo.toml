@@ -1,0 +1,25 @@
+[package]
+name = "cns-price-oracle"
+version = "0.1.0"
+authors = ["Mikhail Pogretskiy <mikhail.pogretskiy@bictory.io>"]
+edition = "2018"
+
+[features]
+default = []
+std = ["concordium-std/std"]
+
+[dependencies]
+concordium-std = { git = "https://github.com/Concordium/concordium-rust-smart-contracts", rev = "207bc11ee22fc5392053439d055a9a56e66cc1b6", package = "concordium-std", default-features = false }
+commons = { path = "../../../utils/commons", default-features = false }
+
+[lib]
+crate-type=["cdylib", "rlib"]
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+
+[profile.dev]
+codegen-units = 1
+opt-level = "z"
+panic = "abort"

@@ -1,0 +1,30 @@
+[
+    [
+        {
+            "operator": {
+                "Contract": [
+                    {
+                        "subindex": 0,
+                        "index": 1893
+                    }
+                ]
+            },
+            "update": {
+                "Remove": []
+            }
+        },
+        {
+            "operator": {
+                "Contract": [
+                    {
+                        "subindex": 0,
+                        "index": 1895
+                    }
+                ]
+            },
+            "update": {
+                "Add": []
+            }
+        }
+    ]
+]

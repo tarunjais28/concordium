@@ -1,0 +1,24 @@
+{
+    "domain_pricing": {
+        "Scaling": [
+            {
+                "short_max_length": 1,
+                "short": {
+                    "Amount": ["0"] 
+                },
+                "mid": [
+                    { "Amount": ["0"] },
+                    { "Amount": ["0"] },
+                    { "Amount": ["0"] },
+                    { "Amount": ["0"] }
+                ],
+                "long": { "Amount": ["0"] }
+            }
+        ]
+    },
+    "subdomain_pricing": {
+        "Fixed": [
+            { "Amount": ["0"] }
+        ]
+    }
+}

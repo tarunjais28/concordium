@@ -1,0 +1,9 @@
+{
+    "storage_contract": {
+        "index": 793,
+        "subindex": 0
+    },
+    "royalty_on_mint": [2000000],
+    "grace_on_mint": "60d",
+    "beneficiary": "4MyVHYbRkAU6fqQsoSDzni6mrVz1KEvhDJoMVmDmrCgPBD8b7S"
+}

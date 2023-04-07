@@ -1,0 +1,27 @@
+{
+    "result_contract": {
+        "index": 9999,
+        "subindex": 100
+    },
+    "result_function": {
+        "contract": "BictoryCnsNft",
+        "func": "operatorOf"
+    },
+    "queries": [
+        {
+            "owner": {
+                "Account": [
+                    "3Q1kmWQL8pJcMprWY8pBApgASvqPtmemyWkMD1CPKpwbV9JjsJ"
+                ]
+            },
+            "address": {
+                "Contract": [
+                    {
+                        "index": 1895,
+                        "subindex": 0
+                    }
+                ]
+            }
+        }
+    ]
+}

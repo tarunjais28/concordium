@@ -1,0 +1,57 @@
+@startuml
+
+component user [
+    User
+]
+
+component library [
+    Resolver library
+
+    ---
+
+    Parses registry state and returns the resolved domain to the caller.
+]
+
+component cns [
+    CNS
+
+    ---
+
+    Stateless logic contract for CNS. Ensures valid interactions and state of registry and NFT for each domain.
+
+    ---
+
+    register()
+    update()
+]
+
+
+component registry [
+    Registry
+
+    ---
+
+    Storage contracts
+
+    Responsible for storing registered domains. Only CNS contract is allowed to update it's data.
+]
+
+component nft [
+    CIS-1 NFT
+
+    ---
+
+    CIS-1 NFT contract
+
+    Responsible for managing the ownership data for the domain.
+]
+
+user<-->cns
+user<-->library
+
+library<-->registry : read and parse state
+
+cns-->registry : find()
+cns<-->nft : isOperator()
+
+@enduml

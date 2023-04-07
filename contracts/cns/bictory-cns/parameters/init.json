@@ -1,0 +1,15 @@
+{
+    "registry": {
+        "index": 1000,
+        "subindex": 0
+    },
+    "nft": {
+        "index": 2000,
+        "subindex": 0
+    },
+    "price_oracle": {
+        "index": 3000,
+        "subindex": 0
+    },
+    "subscription_year_limit": 3
+}

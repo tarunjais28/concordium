@@ -1,0 +1,20 @@
+[package]
+name = "commons"
+version = "1.0.0"
+authors = ["Tarun Jaiswal <tarunjais28@gmail.com>"]
+edition = "2018"
+
+[features]
+default = []
+std = ["concordium-std/std", "concordium-cis2/std"]
+
+[dependencies]
+concordium-cis2 = { git = "https://github.com/Concordium/concordium-rust-smart-contracts", tag = "releases/concordium-cis2/1.2.0", package = "concordium-cis2", default-features = false }
+concordium-std = { git = "https://github.com/Concordium/concordium-rust-smart-contracts", tag = "releases/concordium-cis2/1.2.0", package = "concordium-std", default-features = false }
+
+[lib]
+crate-type=["rlib"]
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"

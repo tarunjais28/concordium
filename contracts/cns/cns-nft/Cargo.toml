@@ -1,0 +1,25 @@
+[package]
+name = "cns-nft"
+version = "0.1.0"
+authors = ["Mikhail Pogretskiy <mikhail.pogretskiy@bictory.io>"]
+edition = "2018"
+
+[features]
+default = []
+std = ["concordium-std/std", "concordium-cis1/std"]
+
+[dependencies]
+concordium-cis1 = { git = "https://github.com/Concordium/concordium-rust-smart-contracts", rev = "b26f19676d756d804034fb694ad717332612e38c", package = "concordium-cis1", default-features = false }
+concordium-std = { git = "https://github.com/Concordium/concordium-rust-smart-contracts", rev = "b26f19676d756d804034fb694ad717332612e38c", package = "concordium-std", default-features = false }
+
+commons-v1 = { path = "../../../utils/commons-v1", default-features = false }
+
+[lib]
+crate-type=["cdylib", "rlib"]
+
+[profile.release]
+codegen-units = 1
+
+[profile.dev]
+codegen-units = 1
+panic = "abort"

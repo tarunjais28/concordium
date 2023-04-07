@@ -1,0 +1,9 @@
+{
+    "kind": { "Add": [] },
+    "address": {
+        "Contract": [{
+            "index": 430,
+            "subindex": 0
+        }]
+    }
+}

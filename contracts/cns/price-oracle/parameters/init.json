@@ -1,0 +1,16 @@
+{
+    "domain_pricing": {
+        "Fixed": [
+            {
+                "Limited": []
+            }
+        ]
+    },
+    "subdomain_pricing": {
+        "Fixed": [
+            {
+                "Limited": []
+            }
+        ]
+    }
+}

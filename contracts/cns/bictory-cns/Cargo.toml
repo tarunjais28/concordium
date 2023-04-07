@@ -1,0 +1,22 @@
+[package]
+name = "bictory-cns"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+concordium-std = { git = "https://github.com/Concordium/concordium-rust-smart-contracts", rev = "b26f19676d756d804034fb694ad717332612e38c", package = "concordium-std", default-features = false }
+concordium-cis1 = { git = "https://github.com/Concordium/concordium-rust-smart-contracts", rev = "b26f19676d756d804034fb694ad717332612e38c", package = "concordium-cis1", default-features = false }
+commons-v1 = { path = "../../../utils/commons-v1", default-features = false }
+sha3 = { version = "0.10.1", default-features = false }
+
+[lib]
+crate-type=["cdylib", "rlib"]
+
+[profile.release]
+codegen-units = 1
+opt-level = 3
+panic = "abort"
+
+[profile.dev]
+panic = "abort"
+

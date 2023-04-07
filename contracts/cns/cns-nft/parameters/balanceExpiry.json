@@ -1,0 +1,15 @@
+{
+    "result_contract": {
+        "index": 200,
+        "subindex": 1
+    },
+    "result_function": {
+        "func": "dummyFunctionName",
+        "contract": "dummyContractName"
+    },
+    "owner": {
+        "Account": [
+            "3xrb6rtYTTt3NPcEx1wgzd78h3Lb69QA6egBhJ5vnLmH6qxcN6"
+        ]
+    }
+}

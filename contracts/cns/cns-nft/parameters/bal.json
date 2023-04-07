@@ -1,0 +1,22 @@
+{
+    "result_function": {
+        "func": "mint",
+        "contract": "BictoryCnsNft"
+    },
+    "queries": [
+        {
+            "address": {
+                "Account": [
+                    "3Q1kmWQL8pJcMprWY8pBApgASvqPtmemyWkMD1CPKpwbV9JjsJ"
+                ]
+            },
+            "token_id": [
+                1
+            ]
+        }
+    ],
+    "result_contract": {
+        "subindex": 0,
+        "index": 1733
+    }
+}

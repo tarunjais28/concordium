@@ -1,0 +1,17 @@
+[
+    {
+        "owner": {
+            "Account": [
+                "4MyVHYbRkAU6fqQsoSDzni6mrVz1KEvhDJoMVmDmrCgPBD8b7S"
+            ]
+        },
+        "address": {
+            "Contract": [
+                {
+                    "index": 1895,
+                    "subindex": 0
+                }
+            ]
+        }
+    }
+]

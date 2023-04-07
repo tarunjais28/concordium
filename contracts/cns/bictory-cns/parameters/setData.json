@@ -1,0 +1,7 @@
+{
+    "domain": "test.ccd",
+    "key": "mykey",
+    "value": {
+        "String": ["myvalue"]
+    }
+}

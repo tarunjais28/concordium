@@ -1,0 +1,20 @@
+[package]
+name = "bictory-nft-proxy"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+concordium-std = { git = "https://github.com/Concordium/concordium-rust-smart-contracts", rev = "207bc11ee22fc5392053439d055a9a56e66cc1b6", package = "concordium-std", default-features = false }
+concordium-cis2 = { git = "https://github.com/Concordium/concordium-rust-smart-contracts", rev = "207bc11ee22fc5392053439d055a9a56e66cc1b6", package = "concordium-cis2", default-features = false }
+commons = { path = "../../../utils/commons", default-features = false }
+generic-proxy = { path = "../generic-proxy" }
+
+[lib]
+crate-type=["cdylib", "rlib"]
+
+[profile.release]
+codegen-units = 1
+
+[profile.dev]
+codegen-units = 1
+panic = "abort"

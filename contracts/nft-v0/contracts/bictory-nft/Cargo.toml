@@ -1,0 +1,26 @@
+[package]
+name = "bictory-nft"
+version = "0.1.0"
+authors = ["Tarun Jaiswal <tarunjais28@gmail.com>"]
+edition = "2018"
+
+[features]
+default = []
+std = ["concordium-std/std", "concordium-cis1/std"]
+
+[dependencies]
+concordium-cis1 = { git = "https://github.com/Concordium/concordium-rust-smart-contracts", rev = "74e303e0b449852eb4e9e97f4312f2129564ae4e", package = "concordium-cis1", default-features = false }
+concordium-std = { git = "https://github.com/Concordium/concordium-rust-smart-contracts", rev = "74e303e0b449852eb4e9e97f4312f2129564ae4e", package = "concordium-std", default-features = false }
+commons = { path = "../../utils/commons", default-features = false }
+
+[lib]
+crate-type=["cdylib", "rlib"]
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+
+[profile.dev]
+codegen-units = 1
+opt-level = "z"
+panic = "abort"

@@ -1,0 +1,17 @@
+[
+    [
+        {
+            "operator": {
+                "Contract": [
+                    {
+                        "subindex": 0,
+                        "index": 4415
+                    }
+                ]
+            },
+            "update": {
+                "Remove": []
+            }
+        }
+    ]
+]

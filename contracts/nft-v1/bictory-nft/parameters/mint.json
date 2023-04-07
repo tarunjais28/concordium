@@ -1,0 +1,52 @@
+{   
+    "owner": {
+        "Account": [
+            "4MyVHYbRkAU6fqQsoSDzni6mrVz1KEvhDJoMVmDmrCgPBD8b7S"
+        ]
+    },
+    "token_id": "55f0df39d17a07150d197ee1756bfdb127e5395598d094993cd5d96657773b5f0c6ca5d8",
+    "creator": {
+        "Account": [
+            "3pED5ZKQzbNcgSNqFoBqTTwWdNMU71QcjTVTfYPugNnmNc5VAd"
+        ]
+    },
+    "creator_royalty": 21000000,
+    "minter_royalty": 21000000,
+    "cid": [
+        18,
+        32,
+        63,
+        137,
+        125,
+        125,
+        169,
+        244,
+        119,
+        0,
+        175,
+        28,
+        119,
+        53,
+        140,
+        182,
+        78,
+        126,
+        0,
+        144,
+        186,
+        159,
+        38,
+        19,
+        237,
+        19,
+        229,
+        92,
+        39,
+        2,
+        185,
+        147,
+        66,
+        100
+    ],
+    "quantity": "2"
+}
